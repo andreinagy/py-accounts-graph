@@ -11,10 +11,6 @@
 import datetime
 
 
-epoch = datetime.datetime.utcfromtimestamp(0)
-def unix_time_sec(dt):
-    return (dt - epoch).total_seconds()
-
 class Transaction(object):
 
     def __init__(self, ordinal, dat, amount, details):
@@ -25,18 +21,12 @@ class Transaction(object):
         self.amount = amount
         self.details = details
 
+        if self.amount < 0:
+            self.date = self.date + datetime.timedelta(hours=12)
+
     def getDate(self):
         assert isinstance(self.date, datetime.datetime)
         return self.date
-
-    def timestamp(self):
-        print(unix_time_sec(self.date))
-        return unix_time_sec(self.date)
-            #datetime.datetime.strftime(self.date, "%m/%d/%Y") + self.details
-
-    def getOrdinal(self):
-        print(self.ordinal)
-        return self.ordinal
     
     def getAmount(self):
         assert  isinstance(self.amount, float)

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b15c7ca-3034-4a5b-8dd9-f58ef94263d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Transaction.py" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Transaction.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/pybankaccounts.py" afterPath="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/pybankaccounts.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transaction.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Transaction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Transaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,9 +42,11 @@
       <file leaf-file-name="Graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="e#176#194#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,18 +54,18 @@
       <file leaf-file-name="Account.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="154">
+              <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserING.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParserING.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="255">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#51#60#0" expanded="true" />
               </folding>
@@ -114,11 +115,11 @@
       <list>
         <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/FileFinder.py" />
         <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING" />
-        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py" />
-        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py" />
         <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/pybankaccounts.py" />
-        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py" />
         <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Transaction.py" />
+        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py" />
+        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py" />
+        <option value="$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py" />
       </list>
     </option>
   </component>
@@ -180,6 +181,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="getOrdinal&#9;null&#9;null&#10;timestamp(&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,6 +243,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -334,22 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/pybankaccounts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -360,21 +349,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py">
+    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#51#60#0" expanded="true" />
+            <element signature="e#176#194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Transaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="68">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/Account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyBankAccounts/pybankaccounts/ParserING.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#51#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

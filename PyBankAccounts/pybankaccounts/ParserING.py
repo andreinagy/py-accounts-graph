@@ -10,7 +10,7 @@ from Transaction import Transaction
 
 def dateFromString(str):
     date = datetime.strptime(str, '%d %B %Y')
-    print("--------------" + str + "   date : " + repr(date))
+    # print("--------------" + str + "   date : " + repr(date))
     return date
 
 def floatFromAmount(str):

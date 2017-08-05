@@ -23,7 +23,7 @@ class Account(object):
         previousBalance = 0
         for t in transactions:
             balance = Balance(previousBalance, t)
-            print("date " + str(balance.getDate()) + " previous balance " + str(previousBalance) + " transaction amount " + str(balance.getAmount()) + " current balance " + str(balance.getBalance()))
+            # print("date " + str(balance.getDate()) + " previous balance " + str(previousBalance) + " transaction amount " + str(balance.getAmount()) + " current balance " + str(balance.getBalance()))
             previousBalance = balance.getBalance()
 
             balances.append(balance)
