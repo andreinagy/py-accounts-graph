@@ -17,7 +17,6 @@ def parseFile(fileAndPath):
     with open(fileAndPath) as csvFile:
         reader = csv.DictReader(csvFile)
         for row in reader:
-            print(row["Date"] + ": " + "debit" + row["Debit"] + " ----- " + "credit" + row["Credit"])
 
             if row["Date"]:
                 date = datetime.strptime(row["Date"], '%d %B %Y')
@@ -38,6 +37,6 @@ def parseFile(fileAndPath):
                 transaction = Transaction(date, amount, details)
                 transactions.append(transaction)
 
-        sortedTransactions = sorted(transactions, key=lambda x: x.date, reverse=True)
 
-    return sortedTransactions
+
+    return transactions

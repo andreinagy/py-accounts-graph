@@ -2,23 +2,38 @@
 # To change this template file, choose Tools | Templates
 # and open the template in the editor.
 
-if __name__ == "__main__":
-    print "Hello World"
-
-
-import numpy as np
 import matplotlib.pyplot as plt
 
-def f(t):
-    return np.exp(-t) * np.cos(2*np.pi*t)
+if __name__ == "__main__":
+    print "Graph"
 
-t1 = np.arange(0.0, 5.0, 0.1)
-t2 = np.arange(0.0, 5.0, 0.02)
 
-plt.figure(1)
-plt.subplot(211)
-plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
+def plot(xAxis, debitArray, creditArray):
+    # plt.figure(1)
+    # plt.subplot(211)
+    plt.xlabel("Date")
+    plt.ylabel("Funds")
+    credit = plt.plot(xAxis, creditArray, 'g-', linewidth=2.0)
+    plt.setp(credit, color='g', linewidth=2.0)
 
-plt.subplot(212)
-plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
-plt.show()
+    debit = plt.plot(xAxis, debitArray, 'r-')
+    plt.setp(debit, color='r', linewidth=1.0)
+
+
+    plt.grid(True)
+    plt.show()
+
+
+# def f(t):
+#     return np.exp(-t) * np.cos(2*np.pi*t)
+#
+# t1 = np.arange(0.0, 5.0, 0.1)
+# t2 = np.arange(0.0, 5.0, 0.02)
+#
+# plt.figure(1)
+# plt.subplot(211)
+# plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
+#
+# plt.subplot(212)
+# plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
+# plt.show()
