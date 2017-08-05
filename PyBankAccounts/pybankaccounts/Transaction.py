@@ -1,6 +1,4 @@
 
-
-
 # 03 August 2017,,,Service Fee,,2.00,
 # 03 August 2017,,,Transfer Home'Bank,,49.12,
 # ,,,Beneficiary: RCS RDS S.A.,,,
@@ -10,21 +8,25 @@
 # ,,, 33992682,,,
 # ,,,Reference number: 180406724,,,
 
+from datetime import datetime
+
 class Transaction(object):
 
-    def __init__(self, lines):
-        self.lines = lines
-        
-        self.date = Date()
-        self.amount = 100
-        
+    def __init__(self, dat, amount, details):
+
+        assert isinstance(dat, datetime)
+        self.date = dat
+        self.amount = amount
+        self.details = details
+
     def getDate(self):
+        assert isinstance(self.date, datetime)
         return self.date
     
-    def getAmount(selfs):
+    def getAmount(self):
+        assert  isinstance(self.amount, float)
         return self.amount
-    
-    @property
-    def __str__(self):
-        assert isinstance(self.lines, object)
-        return self.lines
+
+    def getDetails(self):
+        assert isinstance(self.details, str)
+        return self.details
