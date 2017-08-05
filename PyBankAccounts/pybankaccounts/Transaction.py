@@ -8,20 +8,35 @@
 # ,,, 33992682,,,
 # ,,,Reference number: 180406724,,,
 
-from datetime import datetime
+import datetime
+
+
+epoch = datetime.datetime.utcfromtimestamp(0)
+def unix_time_sec(dt):
+    return (dt - epoch).total_seconds()
 
 class Transaction(object):
 
-    def __init__(self, dat, amount, details):
+    def __init__(self, ordinal, dat, amount, details):
 
-        assert isinstance(dat, datetime)
+        assert isinstance(dat, datetime.datetime)
+        self.ordinal = ordinal
         self.date = dat
         self.amount = amount
         self.details = details
 
     def getDate(self):
-        assert isinstance(self.date, datetime)
+        assert isinstance(self.date, datetime.datetime)
         return self.date
+
+    def timestamp(self):
+        print(unix_time_sec(self.date))
+        return unix_time_sec(self.date)
+            #datetime.datetime.strftime(self.date, "%m/%d/%Y") + self.details
+
+    def getOrdinal(self):
+        print(self.ordinal)
+        return self.ordinal
     
     def getAmount(self):
         assert  isinstance(self.amount, float)

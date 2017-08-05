@@ -5,6 +5,7 @@
 import FileFinder as f
 import Graph as g
 import ParserING as parserIng
+from Account import Account
 from operator import attrgetter
 
 if __name__ == "__main__":
@@ -16,11 +17,24 @@ for file in f.findFilesInDirectory(f.cwd(), ".csv"):
     transactions += (parserIng.parseFile(file))
 
 
-sortedTransactions = sorted(transactions, key=attrgetter('date'), reverse=True)
+sortedTransactions = sorted(transactions, key=attrgetter('date'), reverse=False)
 
-xAxis = [0, 1, 2, 3, 4]
-debit = [1, 2, 1, 1, 1]
-credit = [0, 0, 0, 1, 1]
+acc = Account(sortedTransactions)
 
-g.plot(xAxis, debit, credit)
+dates = acc.getAllDates()
+balances = acc.getAllBalances()
+
+print(dates)
+print(balances)
+
+g.plotAmount(dates, balances)
+
+# xAxis = [o.getDate() for o in sortedTransactions]
+# amount = [o.amount for o in sortedTransactions]
+#
+# print(sortedTransactions)
+# print(xAxis)
+# print(amount)
+#
+# g.plotAmount(xAxis, amount)
 

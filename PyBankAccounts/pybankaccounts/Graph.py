@@ -7,6 +7,14 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     print "Graph"
 
+def plotAmount(xAxis, amount):
+    # plt.figure(1)
+    # plt.subplot(211)
+    plt.xlabel("Date")
+    plt.ylabel("Funds")
+    plt.plot(xAxis, amount, 'g-')
+    plt.grid(True)
+    plt.show()
 
 def plot(xAxis, debitArray, creditArray):
     # plt.figure(1)
