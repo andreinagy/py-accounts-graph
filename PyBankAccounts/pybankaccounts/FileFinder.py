@@ -5,6 +5,18 @@
 if __name__ == "__main__":
     print "Hello World"
 
-def someFunc():
-    print("some func")
+import os
+
+def cwd():
+    cwd = os.getcwd()
+    return(cwd)
     
+    
+def findFilesInDirectory (baseDirectory, extension) :
+    files = []
+    for r,d,f in os.walk(baseDirectory):
+        for file in f:
+            if file.endswith(extension):
+                fileWithPath = os.path.join(r,file)
+                files.append(fileWithPath)
+    return files
