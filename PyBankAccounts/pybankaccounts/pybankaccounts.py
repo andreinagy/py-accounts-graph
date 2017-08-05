@@ -3,12 +3,11 @@
 # and open the template in the editor.
 
 import FileFinder as f
+import ParserING as parserIng
 
 if __name__ == "__main__":
-    print("Hello World")
+    print("Python Bank Accounts CSV parser")
 
-
-print(f.findFilesInDirectory(f.cwd(), ".csv"))
-
-
+for file in f.findFilesInDirectory(f.cwd(), ".csv"):
+    parserIng.parseFile(file)
 

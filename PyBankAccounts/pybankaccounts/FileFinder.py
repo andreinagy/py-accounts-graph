@@ -3,7 +3,7 @@
 # and open the template in the editor.
 
 if __name__ == "__main__":
-    print "Hello World"
+    print "File Finder"
 
 import os
 
